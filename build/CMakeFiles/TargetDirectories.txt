@@ -1,0 +1,3 @@
+/home/quokka/chat_server/build/CMakeFiles/chat_server.dir
+/home/quokka/chat_server/build/CMakeFiles/edit_cache.dir
+/home/quokka/chat_server/build/CMakeFiles/rebuild_cache.dir

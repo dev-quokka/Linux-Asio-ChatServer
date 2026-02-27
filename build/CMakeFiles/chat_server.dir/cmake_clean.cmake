@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o"
+  "CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o.d"
   "CMakeFiles/chat_server.dir/src/main.cpp.o"
   "CMakeFiles/chat_server.dir/src/main.cpp.o.d"
   "chat_server"

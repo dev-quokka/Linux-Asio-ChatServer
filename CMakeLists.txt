@@ -8,6 +8,7 @@ find_package(Boost REQUIRED COMPONENTS system)
 
 add_executable(chat_server
     src/main.cpp
+    src/SessionManager/SessionManager.cpp
 )
 
 target_link_libraries(chat_server

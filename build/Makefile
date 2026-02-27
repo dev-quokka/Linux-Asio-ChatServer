@@ -129,6 +129,30 @@ chat_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/build
 .PHONY : chat_server/fast
 
+src/SessionManager/SessionManager.o: src/SessionManager/SessionManager.cpp.o
+.PHONY : src/SessionManager/SessionManager.o
+
+# target to build an object file
+src/SessionManager/SessionManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o
+.PHONY : src/SessionManager/SessionManager.cpp.o
+
+src/SessionManager/SessionManager.i: src/SessionManager/SessionManager.cpp.i
+.PHONY : src/SessionManager/SessionManager.i
+
+# target to preprocess a source file
+src/SessionManager/SessionManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.i
+.PHONY : src/SessionManager/SessionManager.cpp.i
+
+src/SessionManager/SessionManager.s: src/SessionManager/SessionManager.cpp.s
+.PHONY : src/SessionManager/SessionManager.s
+
+# target to generate assembly for a file
+src/SessionManager/SessionManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.s
+.PHONY : src/SessionManager/SessionManager.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -162,6 +186,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... chat_server"
+	@echo "... src/SessionManager/SessionManager.o"
+	@echo "... src/SessionManager/SessionManager.i"
+	@echo "... src/SessionManager/SessionManager.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

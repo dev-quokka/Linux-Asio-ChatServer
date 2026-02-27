@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/chat_server.dir/src/main.cpp.o -o chat_server  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0 
+/usr/bin/c++ CMakeFiles/chat_server.dir/src/main.cpp.o CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o -o chat_server  /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0 

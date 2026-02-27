@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/quokka/chat_server/src/SessionManager/SessionManager.cpp" "CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o" "gcc" "CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o.d"
   "/home/quokka/chat_server/src/main.cpp" "CMakeFiles/chat_server.dir/src/main.cpp.o" "gcc" "CMakeFiles/chat_server.dir/src/main.cpp.o.d"
   )
 

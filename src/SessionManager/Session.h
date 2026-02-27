@@ -12,48 +12,55 @@ using asio::ip::tcp;
 class Session : public std::enable_shared_from_this<Session> {
 public:
     Session(tcp::socket socket, SessionManager& room)
-        : socket_(std::move(socket)), room_(room) {}
+        : socket_(std::move(socket))
+        , room_(room)
+        , strand_(asio::make_strand(socket_.get_executor())) {}
 
     void Start() {
-        Read();
+        asio::dispatch(strand_, [self = shared_from_this()]() {
+            self->Read();
+        });
     }
 
     void Deliver(const std::shared_ptr<const std::string>& msg) {
-        outbox_.push_back(msg);
-        if (writing_) return;
-        writing_ = true;
-        Write();
+        asio::post(strand_, [self = shared_from_this(), msg]() {
+            self->outbox_.push_back(msg);
+            if (self->writing_) return;
+            self->writing_ = true;
+            self->Write();
+        });
     }
 
 private:
     void Read() {
         auto self = shared_from_this();
 
-        // '\n'까지 읽기
         asio::async_read_until(socket_, inbuf_, '\n',
-            [this, self](boost::system::error_code ec, std::size_t /*bytes*/) {
-                if (ec) {
-                    room_.leave(self);
-                    return;
+            asio::bind_executor(strand_,
+                [this, self](boost::system::error_code ec, std::size_t) {
+                    if (ec) {
+                        room_.leave(self);
+                        return;
+                    }
+
+                    std::istream is(&inbuf_);
+                    std::string line;
+                    std::getline(is, line);
+
+                    if (!line.empty() && line.back() == '\r')
+                        line.pop_back();
+
+                    const auto socketNum = socket_.native_handle();
+                    std::string newMsg =
+                        "[소켓번호: " + std::to_string((long long)socketNum) + "] : " + line + "\n";
+
+                    auto msg = std::make_shared<const std::string>(std::move(newMsg));
+                    room_.broadcast(msg);
+
+                    Read();
                 }
-
-                std::istream is(&inbuf_);
-                std::string line;
-                std::getline(is, line);
-
-                // '\r' 제거
-                if (!line.empty() && line.back() == '\r')
-                    line.pop_back();
-
-                const auto socketNum = socket_.native_handle();
-                std::string newMsg =
-                    "[소켓번호: " + std::to_string((long long)socketNum) + "] : " + line + "\n";
-
-                auto msg = std::make_shared<const std::string>(std::move(newMsg));
-                room_.broadcast(msg);
-
-                Read();
-            });
+            )
+        );
     }
 
     void Write() {
@@ -62,17 +69,26 @@ private:
 
         auto msg = outbox_.front();
         asio::async_write(socket_, asio::buffer(*msg),
-            [this, self](auto ec, std::size_t) {
-                if (ec) { room_.leave(self); return; }
-                outbox_.pop_front();
-                Write();
-            });
+            asio::bind_executor(strand_,
+                [this, self](boost::system::error_code ec, std::size_t) {
+                    if (ec) {
+                        room_.leave(self);
+                        return;
+                    }
+                    outbox_.pop_front();
+                    Write();
+                }
+            )
+        );
     }
 
     tcp::socket socket_;
     SessionManager& room_;
-    boost::asio::streambuf inbuf_;
 
+    // 세션 전용 strand
+    asio::strand<tcp::socket::executor_type> strand_;
+
+    boost::asio::streambuf inbuf_;
     std::deque<std::shared_ptr<const std::string>> outbox_;
     bool writing_ = false;
 };

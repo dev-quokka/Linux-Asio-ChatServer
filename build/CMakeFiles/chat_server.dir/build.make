@@ -109,6 +109,16 @@ chat_server: CMakeFiles/chat_server.dir/src/main.cpp.o
 chat_server: CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o
 chat_server: CMakeFiles/chat_server.dir/build.make
 chat_server: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
+chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libmongocxx-static.a
+chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libbsoncxx-static.a
+chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libmongoc2.a
+chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libbson2.a
+chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libz.a
+chat_server: /usr/lib/x86_64-linux-gnu/librt.a
+chat_server: /usr/lib/x86_64-linux-gnu/libm.so
+chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libssl.a
+chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libcrypto.a
+chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libutf8proc.a
 chat_server: CMakeFiles/chat_server.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/quokka/chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable chat_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chat_server.dir/link.txt --verbose=$(VERBOSE)

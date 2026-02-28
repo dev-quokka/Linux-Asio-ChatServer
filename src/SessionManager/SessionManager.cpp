@@ -4,14 +4,14 @@
 void SessionManager::join(const std::shared_ptr<Session>& s) {
     asio::post(strand_, [this, s]() {
         sessions_.insert(s);
-        std::cout << "Client joined" <<'n';
+        std::cout << "Client joined" << '\n';
     });
 }
 
 void SessionManager::leave(const std::shared_ptr<Session>& s) {
     asio::post(strand_, [this, s]() {
         sessions_.erase(s);
-        std::cout << "Client left" <<'n';
+        std::cout << "Client joined" << '\n';
     });
 }
 

@@ -1335,6 +1335,258 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
   /home/quokka/chat_server/src/SessionManager/Session.h \
   /home/quokka/chat_server/src/SessionManager/SessionManager.h \
   /home/quokka/chat_server/src/ChatServer/ChatServer.h \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/config/config.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/config/export.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/config/version.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/compare.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/macros.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/postlude.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/prelude.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/type_traits.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/stdx/optional.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/stdx/string_view.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/element-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/element.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/value-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/value.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/view-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/view.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/view_or_value.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/array-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/array.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/document-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/document.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/helpers.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/impl.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/kvp.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_array-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_array.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_binary-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_binary.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_document-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_document.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/concatenate-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/concatenate.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/core-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/core.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array_context-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array_context.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/closed_context-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/closed_context.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/document-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/document.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/helpers.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/key_context-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/key_context.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/value_context-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/value_context.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/compiler.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/config.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/export.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/postlude.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/prelude.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/util.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/version.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/decimal128-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/decimal128.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/element-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/element.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/value-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/value.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/view-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/view.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/view_or_value.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/oid-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/oid.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/stdx/optional.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/stdx/string_view.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/stdx/type_traits.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/string/view_or_value-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/string/view_or_value.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/value-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/value.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/view-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/view.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/view_or_value.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/vector/accessor-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/vector/detail-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/vector/formats-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/view_or_value-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/view_or_value.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/config/config.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/config/export.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/config/version.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/detail/postlude.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/detail/prelude.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/bulk_write-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/bulk_write.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/change_stream-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/change_stream.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client_encryption-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client_session-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client_session.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/collection-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/collection.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/compiler.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/config.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/export.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/postlude.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/prelude.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/version.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/cursor-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/cursor.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/database-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/database.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_failed_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_failed_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_started_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_started_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_succeeded_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_succeeded_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_failed_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_failed_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_started_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_started_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_succeeded_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_succeeded_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_changed_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_changed_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_closed_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_closed_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_description-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_description.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_opening_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_opening_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_changed_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_changed_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_closed_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_closed_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_description-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_description.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_opening_event-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_opening_event.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/bucket-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/bucket.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/downloader-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/downloader.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/uploader-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/uploader.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/hint-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/hint.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/index_model-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/index_model.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/index_view-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/index_view.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/instance-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/instance.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/logger-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/delete_many-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/delete_many.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/delete_one-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/delete_one.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/insert_one-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/insert_one.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/replace_one-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/replace_one.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/update_many-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/update_many.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/update_one-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/update_one.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/write-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/write.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/aggregate-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/aggregate.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/apm-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/apm.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/auto_encryption-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/auto_encryption.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/bulk_write-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/bulk_write.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/change_stream-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/change_stream.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client_encryption-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client_encryption.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client_session-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client_session.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/count-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/count.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/delete-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/delete.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/distinct-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/distinct.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/estimated_document_count-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/estimated_document_count.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_delete-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_delete.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_replace-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_replace.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_update-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_update.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_common_options-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_common_options.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/gridfs/bucket-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/gridfs/bucket.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/gridfs/upload-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/gridfs/upload.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/index-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/index.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/index_view-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/index_view.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/insert-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/insert.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/replace-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/replace.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/server_api-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/server_api.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/tls-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/tls.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/transaction-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/transaction.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/update-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/update.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/pipeline-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/pipeline.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/pool-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/read_concern-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/read_concern.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/read_preference-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/read_preference.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/bulk_write-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/bulk_write.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/delete-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/delete.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/gridfs/upload-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/gridfs/upload.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/insert_many-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/insert_many.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/insert_one-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/insert_one.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/replace_one-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/replace_one.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/update-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/update.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/search_index_model-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/search_index_model.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/search_index_view-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/search_index_view.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/uri-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/uri.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/write_concern-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/write_concern.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/write_type-fwd.hpp \
+  /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/write_type.hpp \
   /usr/include/alloca.h \
   /usr/include/arpa/inet.h \
   /usr/include/asm-generic/bitsperlong.h \
@@ -2350,6 +2602,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
   /usr/include/c++/13/bits/stl_iterator.h \
   /usr/include/c++/13/bits/stl_iterator_base_funcs.h \
   /usr/include/c++/13/bits/stl_iterator_base_types.h \
+  /usr/include/c++/13/bits/stl_map.h \
+  /usr/include/c++/13/bits/stl_multimap.h \
   /usr/include/c++/13/bits/stl_multiset.h \
   /usr/include/c++/13/bits/stl_pair.h \
   /usr/include/c++/13/bits/stl_raw_storage_iter.h \
@@ -2364,6 +2618,7 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
   /usr/include/c++/13/bits/streambuf_iterator.h \
   /usr/include/c++/13/bits/string_view.tcc \
   /usr/include/c++/13/bits/stringfwd.h \
+  /usr/include/c++/13/bits/this_thread_sleep.h \
   /usr/include/c++/13/bits/uniform_int_dist.h \
   /usr/include/c++/13/bits/unique_lock.h \
   /usr/include/c++/13/bits/unique_ptr.h \
@@ -2411,6 +2666,7 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
   /usr/include/c++/13/istream \
   /usr/include/c++/13/iterator \
   /usr/include/c++/13/limits \
+  /usr/include/c++/13/map \
   /usr/include/c++/13/memory \
   /usr/include/c++/13/mutex \
   /usr/include/c++/13/new \
@@ -2427,6 +2683,7 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
   /usr/include/c++/13/string \
   /usr/include/c++/13/string_view \
   /usr/include/c++/13/system_error \
+  /usr/include/c++/13/thread \
   /usr/include/c++/13/tr1/bessel_function.tcc \
   /usr/include/c++/13/tr1/beta_function.tcc \
   /usr/include/c++/13/tr1/ell_integral.tcc \
@@ -2663,6 +2920,306 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
   /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 
+/usr/include/c++/13/bits/this_thread_sleep.h:
+
+/usr/include/c++/13/bits/stl_map.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/write_type-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/write_concern.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/write_concern-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/uri.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/search_index_view-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/update-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/replace_one.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/replace_one-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/insert_one.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/insert_many.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/gridfs/upload.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/delete.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/read_preference.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/read_preference-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/read_concern-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/pipeline.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/pipeline-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/update.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/update-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/transaction.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/transaction-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/tls-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/server_api.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/server_api-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/replace.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/insert.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/index_view.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/index_view-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/index.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/gridfs/bucket.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/gridfs/bucket-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_update.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_replace.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_replace-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_delete.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/distinct-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/delete.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/bulk_write.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/count-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client_session.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client_session-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/change_stream.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/change_stream-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/bulk_write.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/bulk_write-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/apm-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/write.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/write-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/update_one-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/replace_one.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/replace_one-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/insert_one.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/insert_one-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/delete_one.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/delete_one-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/delete_many-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/logger-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/instance.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/index_view.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/index_model.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/hint-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/auto_encryption.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/uploader.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_opening_event.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_opening_event-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/gridfs/upload-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_description.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_description-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_closed_event-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_changed_event.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_opening_event.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_opening_event-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_description.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_closed_event.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_closed_event-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_changed_event.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_common_options-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_changed_event-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_succeeded_event-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_started_event.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_succeeded_event-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_started_event.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_failed_event.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_failed_event-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/version.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/prelude.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/export.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/read_concern.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/config.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/compiler.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/collection-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/change_stream.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/detail/prelude.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/detail/postlude.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/config/version.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/config/export.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v1/config/config.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/view_or_value-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/vector/accessor-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/view.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/value.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/string/view_or_value.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/string/view_or_value-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/stdx/type_traits.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/oid.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/oid-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/view-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/value-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/element.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/element-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/decimal128.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/decimal128-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/version.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/util.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/postlude.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/export.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/config.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/compiler.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/helpers.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/document.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/document-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/closed_context.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/closed_context-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array_context-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/concatenate.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_document.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_binary-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/kvp.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/impl.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/helpers.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/document-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/array-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/value.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/type_traits.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/postlude.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/compare.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/config/version.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/config/export.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/bulk_write.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/config/config.hpp:
+
 /home/quokka/chat_server/src/main.cpp:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h:
@@ -2688,6 +3245,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/sys/epoll.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/view_or_value.hpp:
 
 /usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
 
@@ -2723,6 +3282,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/downloader-fwd.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h:
@@ -2730,6 +3291,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sigstack.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/prelude.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
@@ -2751,6 +3314,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/types/clock_t.h:
 
+/usr/include/c++/13/map:
+
 /usr/include/x86_64-linux-gnu/bits/types/__sigval_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
@@ -2760,6 +3325,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_common_options.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/FILE.h:
 
@@ -2775,11 +3342,15 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/delete_many.hpp:
+
 /usr/include/x86_64-linux-gnu/c++/13/bits/c++locale.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios-struct.h:
 
 /usr/include/x86_64-linux-gnu/bits/termios-misc.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_array-fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/termios-c_oflag.h:
 
@@ -2805,6 +3376,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/x86_64-linux-gnu/bits/stdint-least.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/key_context-fwd.hpp:
+
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/statx.h:
@@ -2812,6 +3385,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/statx-generic.h:
 
 /usr/include/x86_64-linux-gnu/bits/ss_flags.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/collection.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/sig_atomic_t.h:
 
@@ -2822,6 +3397,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/signum-arch.h:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/vector/detail-fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/siginfo-consts-arch.h:
 
@@ -2834,6 +3411,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
 /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_started_event-fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/posix_opt.h:
 
@@ -2883,6 +3462,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/x86_64-linux-gnu/asm/ioctls.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/stdx/optional.hpp:
+
 /usr/include/x86_64-linux-gnu/asm/ioctl.h:
 
 /usr/include/x86_64-linux-gnu/asm/bitsperlong.h:
@@ -2901,13 +3482,19 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/poll.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/write_type.hpp:
+
 /usr/include/netinet/in.h:
 
 /usr/include/netdb.h:
 
 /usr/include/net/if.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client_session-fwd.hpp:
+
 /usr/include/math.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/config/postlude.hpp:
 
 /usr/include/locale.h:
 
@@ -2916,6 +3503,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/linux/stddef.h:
 
 /usr/include/linux/stat.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/downloader.hpp:
 
 /usr/include/linux/posix_types.h:
 
@@ -2943,6 +3532,10 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/c++/13/version:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/bulk_write-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/value-fwd.hpp:
+
 /usr/include/c++/13/unordered_map:
 
 /usr/include/c++/13/typeinfo:
@@ -2954,6 +3547,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/traits/set_error_member.hpp:
 
 /usr/include/boost/date_time/gregorian/greg_ymd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/hint.hpp:
 
 /usr/include/boost/date_time/gregorian/greg_weekday.hpp:
 
@@ -3007,6 +3602,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/config/pragma_message.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/concatenate-fwd.hpp:
+
 /usr/include/boost/asio/impl/deferred.hpp:
 
 /usr/include/boost/mpl/void_fwd.hpp:
@@ -3041,6 +3638,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/date_time/time_system_counted.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/auto_encryption-fwd.hpp:
+
 /usr/include/boost/asio/version.hpp:
 
 /usr/include/boost/predef/architecture/z.h:
@@ -3048,6 +3647,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/date_time/microsec_time_clock.hpp:
 
 /usr/include/boost/asio/completion_condition.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/search_index_model.hpp:
 
 /usr/include/boost/date_time/date.hpp:
 
@@ -3085,11 +3686,15 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/c++/13/condition_variable:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_succeeded_event.hpp:
+
 /usr/include/boost/asio/traits/bulk_execute_member.hpp:
 
 /usr/include/boost/asio/this_coro.hpp:
 
 /usr/include/boost/predef/platform/windows_phone.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/core-fwd.hpp:
 
 /usr/include/boost/date_time/adjust_functors.hpp:
 
@@ -3141,6 +3746,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/require_concept.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client_encryption.hpp:
+
 /usr/include/boost/mpl/aux_/yes_no.hpp:
 
 /usr/include/boost/asio/require.hpp:
@@ -3163,6 +3770,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/config/detail/posix_features.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/index_model-fwd.hpp:
+
 /usr/include/boost/preprocessor/arithmetic/add.hpp:
 
 /usr/include/boost/date_time/gregorian/greg_year.hpp:
@@ -3170,6 +3779,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h:
 
 /usr/include/boost/asio/detail/chrono_time_traits.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/cursor-fwd.hpp:
 
 /usr/include/boost/config/detail/select_platform_config.hpp:
 
@@ -3191,6 +3802,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/c++/13/bits/stl_heap.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/estimated_document_count.hpp:
+
 /usr/include/boost/type_traits/intrinsics.hpp:
 
 /usr/include/linux/version.h:
@@ -3209,11 +3822,15 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/posix/basic_descriptor.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/update_many-fwd.hpp:
+
 /usr/include/boost/smart_ptr/detail/sp_typeinfo_.hpp:
 
 /usr/include/boost/asio/packaged_task.hpp:
 
 /usr/include/boost/mpl/aux_/numeric_cast_utils.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/change_stream-fwd.hpp:
 
 /usr/include/boost/date_time/c_time.hpp:
 
@@ -3269,9 +3886,15 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/ip/impl/address_v4.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/bucket.hpp:
+
 /usr/include/boost/preprocessor/repetition/enum_trailing_params.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/aggregate.hpp:
+
 /usr/include/boost/smart_ptr/detail/operator_bool.hpp:
+
+/usr/include/c++/13/bits/stl_multimap.h:
 
 /usr/include/boost/asio/detail/impl/buffer_sequence_adapter.ipp:
 
@@ -3290,6 +3913,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/ip/detail/impl/endpoint.ipp:
 
 /usr/include/boost/date_time/compiler_config.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_failed_event.hpp:
 
 /usr/include/c++/13/bits/ios_base.h:
 
@@ -3337,6 +3962,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/ip/detail/socket_option.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/pool-fwd.hpp:
+
 /usr/include/boost/asio/impl/use_future.hpp:
 
 /usr/include/boost/asio/detail/memory.hpp:
@@ -3345,11 +3972,15 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/impl/executor.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/update_one.hpp:
+
 /usr/include/boost/asio/impl/system_executor.hpp:
 
 /usr/include/c++/13/pstl/glue_memory_defs.h:
 
 /usr/include/boost/date_time/constrained_value.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/view_or_value.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h:
 
@@ -3384,6 +4015,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/impl/prepend.hpp:
 
 /usr/include/boost/asio/impl/handler_alloc_hook.ipp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_closed_event.hpp:
 
 /usr/include/boost/preprocessor/detail/limits/auto_rec_256.hpp:
 
@@ -3428,6 +4061,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/asm/posix_types_64.h:
 
 /usr/include/boost/asio/execution/connect.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/index-fwd.hpp:
 
 /usr/include/boost/asio/generic/seq_packet_protocol.hpp:
 
@@ -3517,6 +4152,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/io_context.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/insert_many-fwd.hpp:
+
 /usr/include/boost/predef/architecture/sys370.h:
 
 /usr/include/boost/predef/detail/comp_detected.h:
@@ -3524,6 +4161,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/mpl/aux_/static_cast.hpp:
 
 /usr/include/boost/asio/impl/system_context.ipp:
+
+/usr/include/c++/13/thread:
 
 /usr/include/boost/asio/detail/impl/scheduler.ipp:
 
@@ -3551,6 +4190,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/mpl/aux_/na_spec.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/element.hpp:
+
 /usr/include/boost/asio/execution/set_done.hpp:
 
 /usr/include/boost/asio/detail/concurrency_hint.hpp:
@@ -3571,9 +4212,13 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/preprocessor/facilities/expand.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/tls.hpp:
+
 /usr/include/boost/system/detail/error_condition.hpp:
 
 /usr/include/c++/13/bits/hashtable_policy.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/config/prelude.hpp:
 
 /usr/include/boost/asio/detail/buffered_stream_storage.hpp:
 
@@ -3595,7 +4240,11 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/smart_ptr/detail/spinlock_gcc_atomic.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/apm.hpp:
+
 /usr/include/boost/asio/deadline_timer.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/document.hpp:
 
 /usr/include/boost/asio/serial_port.hpp:
 
@@ -3645,6 +4294,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/predef/architecture/rs6k.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_succeeded_event.hpp:
+
 /usr/include/boost/asio/execution/bulk_execute.hpp:
 
 /usr/include/boost/asio/impl/buffered_read_stream.hpp:
@@ -3654,6 +4305,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/detail/reactive_socket_service_base.hpp:
 
 /usr/include/boost/asio/detail/scoped_lock.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/instance-fwd.hpp:
 
 /usr/include/boost/asio/traits/schedule_free.hpp:
 
@@ -3670,6 +4323,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/predef/architecture/alpha.h:
 
 /usr/include/boost/config/no_tr1/cmath.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/delete-fwd.hpp:
 
 /usr/include/boost/asio/ip/impl/address_v4.ipp:
 
@@ -3741,6 +4396,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/asm-generic/posix_types.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/view_or_value.hpp:
+
 /usr/include/boost/asio/traits/require_free.hpp:
 
 /usr/include/boost/predef/library/c/vms.h:
@@ -3775,6 +4432,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/windows/overlapped_ptr.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_document-fwd.hpp:
+
 /usr/include/boost/asio/detail/impl/reactive_socket_service_base.ipp:
 
 /usr/include/boost/asio/traits/bulk_execute_free.hpp:
@@ -3788,6 +4447,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/detail/socket_option.hpp:
 
 /usr/include/boost/asio/any_io_executor.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/value_context-fwd.hpp:
 
 /usr/include/boost/preprocessor/control/detail/limits/while_256.hpp:
 
@@ -3805,11 +4466,15 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/detail/eventfd_select_interrupter.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_array.hpp:
+
 /usr/include/boost/asio/detail/impl/handler_tracking.ipp:
 
 /usr/include/boost/numeric/conversion/detail/is_subranged.hpp:
 
 /usr/include/boost/asio/any_completion_handler.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/value-fwd.hpp:
 
 /usr/include/asm-generic/sockios.h:
 
@@ -3909,6 +4574,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/executor_work_guard.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types-fwd.hpp:
+
 /usr/include/boost/asio/detail/reactive_socket_recvfrom_op.hpp:
 
 /home/quokka/chat_server/src/SessionManager/SessionManager.cpp:
@@ -3927,7 +4594,11 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/detail/impl/strand_executor_service.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/estimated_document_count-fwd.hpp:
+
 /usr/include/boost/preprocessor/logical/bool.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/gridfs/upload-fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h:
 
@@ -3996,6 +4667,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/detail/epoll_reactor.hpp:
 
 /usr/include/boost/asio/detached.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/database-fwd.hpp:
 
 /usr/include/boost/asio/detail/impl/service_registry.ipp:
 
@@ -4077,19 +4750,29 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/detail/impl/posix_mutex.ipp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/element-fwd.hpp:
+
 /usr/include/boost/asio/awaitable.hpp:
 
 /usr/include/boost/asio/is_read_buffered.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/distinct.hpp:
 
 /usr/include/boost/asio/ip/udp.hpp:
 
 /usr/include/boost/asio/impl/cancellation_signal.ipp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/detail/macros.hpp:
+
 /usr/include/boost/system/detail/generic_category.hpp:
 
 /usr/include/boost/predef/compiler/gcc_xml.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/value_context.hpp:
+
 /usr/include/boost/predef/language/stdcpp.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/database.hpp:
 
 /usr/include/boost/asio/detail/impl/service_registry.hpp:
 
@@ -4116,6 +4799,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/predef/architecture/e2k.h:
 
 /usr/include/boost/predef/library/std/libcomo.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/view.hpp:
 
 /usr/include/c++/13/tr1/exp_integral.tcc:
 
@@ -4199,6 +4884,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/detail/io_control.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/array.hpp:
+
 /usr/include/boost/asio/detail/completion_handler.hpp:
 
 /usr/include/boost/asio/detail/fenced_block.hpp:
@@ -4224,6 +4911,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/detail/reactive_socket_recvmsg_op.hpp:
 
 /usr/include/boost/asio/ip/address_v6.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/vector/formats-fwd.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h:
 
@@ -4263,6 +4952,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/date_time/posix_time/posix_time_system.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/key_context.hpp:
+
 /usr/include/boost/asio/detail/signal_blocker.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/socket.h:
@@ -4277,6 +4968,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/regex/config.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types/bson_value/view-fwd.hpp:
+
 /usr/include/boost/mpl/and.hpp:
 
 /usr/include/boost/asio/detail/push_options.hpp:
@@ -4285,7 +4978,11 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/impl/execution_context.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/update.hpp:
+
 /usr/include/boost/asio/traits/query_member.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_update-fwd.hpp:
 
 /usr/include/boost/asio/windows/stream_handle.hpp:
 
@@ -4294,6 +4991,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/detail/strand_executor_service.hpp:
 
 /usr/include/boost/predef/os/bsd/bsdi.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/search_index_view.hpp:
 
 /usr/include/boost/asio/detail/string_view.hpp:
 
@@ -4327,7 +5026,11 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/asio/detail/timer_queue_base.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v1/stdx/string_view.hpp:
+
 /usr/include/boost/core/enable_if.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client_session.hpp:
 
 /usr/include/boost/asio/detail/impl/strand_service.ipp:
 
@@ -4433,6 +5136,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/c++/13/cstdlib:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/stdx/optional.hpp:
+
 /usr/include/assert.h:
 
 /usr/include/boost/mpl/aux_/config/has_xxx.hpp:
@@ -4444,6 +5149,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/predef/os/linux.h:
 
 /usr/include/boost/mpl/aux_/config/msvc.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/index_view-fwd.hpp:
 
 /usr/include/boost/mpl/aux_/config/nttp.hpp:
 
@@ -4471,6 +5178,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/mpl/aux_/nested_type_wknd.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/insert_one-fwd.hpp:
+
 /usr/include/boost/date_time/date_duration_types.hpp:
 
 /usr/include/boost/mpl/aux_/nttp_decl.hpp:
@@ -4482,6 +5191,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/less.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/value.hpp:
 
 /usr/include/boost/predef/hardware/simd/x86.h:
 
@@ -4500,6 +5211,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/mpl/aux_/template_arity_fwd.hpp:
 
 /usr/include/boost/mpl/aux_/type_wrapper.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/document/view.hpp:
 
 /usr/include/boost/preprocessor/list/adt.hpp:
 
@@ -4521,11 +5234,15 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/mpl/integral_c_tag.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/count.hpp:
+
 /usr/include/boost/asio/execution/mapping.hpp:
 
 /usr/include/boost/preprocessor/punctuation/comma.hpp:
 
 /usr/include/boost/mpl/lambda_fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/aggregate-fwd.hpp:
 
 /usr/include/boost/asio/detail/op_queue.hpp:
 
@@ -4577,6 +5294,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/numeric/conversion/detail/preprocessed/numeric_cast_traits_long_long.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/view-fwd.hpp:
+
 /usr/include/boost/asio/cancellation_signal.hpp:
 
 /usr/include/boost/numeric/conversion/detail/sign_mixture.hpp:
@@ -4600,6 +5319,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
 /usr/include/boost/predef/architecture/arm.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client.hpp:
 
 /usr/include/c++/13/bits/stl_iterator.h:
 
@@ -4640,6 +5361,10 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/traits/require_member.hpp:
 
 /usr/include/boost/preprocessor/arithmetic/sub.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/search_index_model-fwd.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/model/update_many.hpp:
 
 /usr/include/boost/system/detail/mutex.hpp:
 
@@ -4733,7 +5458,11 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/predef/detail/_exception.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/core.hpp:
+
 /usr/include/boost/predef/hardware.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/client_encryption-fwd.hpp:
 
 /usr/include/c++/13/bits/cpp_type_traits.h:
 
@@ -4747,6 +5476,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/preprocessor/comma_if.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/array/view_or_value.hpp:
+
 /usr/include/boost/operators.hpp:
 
 /usr/include/boost/predef/language.h:
@@ -4756,6 +5487,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/predef/language/stdc.h:
 
 /usr/include/boost/predef/library.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/bulk_write-fwd.hpp:
 
 /usr/include/c++/13/bits/functexcept.h:
 
@@ -4784,6 +5517,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/predef/library/std/vacpp.h:
 
 /usr/include/boost/predef/make.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/gridfs/upload.hpp:
 
 /usr/include/c++/13/bits/shared_ptr_atomic.h:
 
@@ -4839,6 +5574,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/predef/platform/windows_runtime.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/insert-fwd.hpp:
+
 /usr/include/boost/preprocessor/repetition/enum_params.hpp:
 
 /usr/include/boost/asio/detail/impl/thread_context.ipp:
@@ -4863,9 +5600,13 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/preprocessor/array/data.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/array_context.hpp:
+
 /usr/include/c++/13/backward/auto_ptr.h:
 
 /usr/include/boost/preprocessor/array/elem.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/basic/sub_binary.hpp:
 
 /usr/include/boost/preprocessor/cat.hpp:
 
@@ -4876,6 +5617,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/x86_64-linux-gnu/bits/floatn.h:
 
 /usr/include/boost/preprocessor/comparison/limits/not_equal_256.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/uri-fwd.hpp:
 
 /usr/include/boost/preprocessor/comparison/not_equal.hpp:
 
@@ -4893,6 +5636,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/preprocessor/empty.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/replace-fwd.hpp:
+
 /usr/include/c++/13/cwchar:
 
 /usr/include/c++/13/bits/memoryfwd.h:
@@ -4906,6 +5651,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/boost/asio/detail/null_event.hpp:
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/client_encryption-fwd.hpp:
 
 /usr/include/boost/preprocessor/facilities/overload.hpp:
 
@@ -4999,6 +5746,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/system/detail/enable_if.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/uploader-fwd.hpp:
+
 /usr/include/c++/13/bits/stl_tempbuf.h:
 
 /usr/include/boost/asio/execution/start.hpp:
@@ -5031,9 +5780,13 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/c++/13/iterator:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/gridfs/bucket-fwd.hpp:
+
 /usr/include/boost/preprocessor/punctuation/comma_if.hpp:
 
 /usr/include/boost/system/detail/system_category_impl.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/cursor.hpp:
 
 /usr/include/boost/system/detail/throws.hpp:
 
@@ -5075,7 +5828,11 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/boost/type_traits/is_floating_point.hpp:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/heartbeat_failed_event-fwd.hpp:
+
 /usr/include/boost/type_traits/is_integral.hpp:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/server_description-fwd.hpp:
 
 /usr/include/boost/mpl/aux_/config/has_apply.hpp:
 
@@ -5113,6 +5870,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/c++/13/bits/functional_hash.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json-fwd.hpp:
+
 /usr/include/boost/smart_ptr/shared_ptr.hpp:
 
 /usr/include/c++/13/iostream:
@@ -5121,13 +5880,19 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/c++/13/bits/hashtable.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/command_started_event-fwd.hpp:
+
 /usr/include/c++/13/bits/locale_facets.tcc:
 
 /usr/include/c++/13/bits/localefwd.h:
 
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/result/delete-fwd.hpp:
+
 /usr/include/boost/predef/architecture/sys390.h:
 
 /usr/include/c++/13/bits/move.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/types.hpp:
 
 /usr/include/c++/13/bits/new_allocator.h:
 
@@ -5158,6 +5923,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/c++/13/bits/sstream.tcc:
 
 /usr/include/c++/13/bits/std_function.h:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/events/topology_changed_event-fwd.hpp:
 
 /usr/include/c++/13/bits/std_thread.h:
 
@@ -5227,6 +5994,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 
 /usr/include/c++/13/cstdio:
 
+/home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/stdx/string_view.hpp:
+
 /usr/include/boost/predef/compiler/ekopath.h:
 
 /usr/include/c++/13/cwctype:
@@ -5254,6 +6023,8 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: /home/quokka/chat_server/src/main.cpp
 /usr/include/c++/13/functional:
 
 /usr/include/c++/13/initializer_list:
+
+/home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi/mongocxx/options/find_one_and_delete-fwd.hpp:
 
 /usr/include/c++/13/iosfwd:
 

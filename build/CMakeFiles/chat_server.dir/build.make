@@ -83,10 +83,24 @@ CMakeFiles/chat_server.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_server.dir/src/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quokka/chat_server/src/main.cpp -o CMakeFiles/chat_server.dir/src/main.cpp.s
 
+CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o: CMakeFiles/chat_server.dir/flags.make
+CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o: /home/quokka/chat_server/src/ChatServer/ChatServer.cpp
+CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o: CMakeFiles/chat_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quokka/chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o -MF CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o.d -o CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o -c /home/quokka/chat_server/src/ChatServer/ChatServer.cpp
+
+CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quokka/chat_server/src/ChatServer/ChatServer.cpp > CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.i
+
+CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quokka/chat_server/src/ChatServer/ChatServer.cpp -o CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.s
+
 CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o: CMakeFiles/chat_server.dir/flags.make
 CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o: /home/quokka/chat_server/src/SessionManager/SessionManager.cpp
 CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o: CMakeFiles/chat_server.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quokka/chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quokka/chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o -MF CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o.d -o CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o -c /home/quokka/chat_server/src/SessionManager/SessionManager.cpp
 
 CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.i: cmake_force
@@ -97,16 +111,34 @@ CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quokka/chat_server/src/SessionManager/SessionManager.cpp -o CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.s
 
+CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o: CMakeFiles/chat_server.dir/flags.make
+CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o: /home/quokka/chat_server/src/MongoDBManager/MongoDBManager.cpp
+CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o: CMakeFiles/chat_server.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/quokka/chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o -MF CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o.d -o CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o -c /home/quokka/chat_server/src/MongoDBManager/MongoDBManager.cpp
+
+CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/quokka/chat_server/src/MongoDBManager/MongoDBManager.cpp > CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.i
+
+CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/quokka/chat_server/src/MongoDBManager/MongoDBManager.cpp -o CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.s
+
 # Object files for target chat_server
 chat_server_OBJECTS = \
 "CMakeFiles/chat_server.dir/src/main.cpp.o" \
-"CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o"
+"CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o" \
+"CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o" \
+"CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o"
 
 # External object files for target chat_server
 chat_server_EXTERNAL_OBJECTS =
 
 chat_server: CMakeFiles/chat_server.dir/src/main.cpp.o
+chat_server: CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o
 chat_server: CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o
+chat_server: CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o
 chat_server: CMakeFiles/chat_server.dir/build.make
 chat_server: /usr/lib/x86_64-linux-gnu/libboost_system.so.1.83.0
 chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libmongocxx-static.a
@@ -120,7 +152,7 @@ chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libssl.a
 chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libcrypto.a
 chat_server: /home/quokka/vcpkg/installed/x64-linux/debug/lib/libutf8proc.a
 chat_server: CMakeFiles/chat_server.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/quokka/chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable chat_server"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/quokka/chat_server/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable chat_server"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/chat_server.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

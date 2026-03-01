@@ -1,4 +1,8 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o"
+  "CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o.d"
+  "CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o"
+  "CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o.d"
   "CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o"
   "CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o.d"
   "CMakeFiles/chat_server.dir/src/main.cpp.o"

@@ -11,9 +11,10 @@ using asio::ip::tcp;
 
 class Session : public std::enable_shared_from_this<Session> {
 public:
-    Session(tcp::socket socket, SessionManager& room)
+    Session(tcp::socket socket, SessionManager& room, MongodbManager& mongo)
         : socket_(std::move(socket))
         , room_(room)
+        , mongo_(mongo)
         , strand_(asio::make_strand(socket_.get_executor())) {}
 
     void Start() {
@@ -57,6 +58,16 @@ private:
                     auto msg = std::make_shared<const std::string>(std::move(newMsg));
                     room_.broadcast(msg);
 
+                    // MongoDB에 채팅 로그 저장
+                    auto now = std::chrono::time_point_cast<std::chrono::milliseconds>(std::chrono::system_clock::now()).time_since_epoch().count();
+
+                    ChatLogItem item;
+                    item.cur_ms = static_cast<int64_t>(now); // 현재 시간
+                    item.sender = std::to_string((long long)socket_.native_handle()); // 현재는 소켓 번호로 테스트. 나중에는 닉네임으로 교체
+                    item.message = line;
+
+                    mongo_.Enqueue(std::move(item));
+
                     Read();
                 }
             )
@@ -84,6 +95,7 @@ private:
 
     tcp::socket socket_;
     SessionManager& room_;
+    MongodbManager& mongo_;
 
     // 세션 전용 strand
     asio::strand<tcp::socket::executor_type> strand_;

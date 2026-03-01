@@ -129,6 +129,54 @@ chat_server/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/build
 .PHONY : chat_server/fast
 
+src/ChatServer/ChatServer.o: src/ChatServer/ChatServer.cpp.o
+.PHONY : src/ChatServer/ChatServer.o
+
+# target to build an object file
+src/ChatServer/ChatServer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o
+.PHONY : src/ChatServer/ChatServer.cpp.o
+
+src/ChatServer/ChatServer.i: src/ChatServer/ChatServer.cpp.i
+.PHONY : src/ChatServer/ChatServer.i
+
+# target to preprocess a source file
+src/ChatServer/ChatServer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.i
+.PHONY : src/ChatServer/ChatServer.cpp.i
+
+src/ChatServer/ChatServer.s: src/ChatServer/ChatServer.cpp.s
+.PHONY : src/ChatServer/ChatServer.s
+
+# target to generate assembly for a file
+src/ChatServer/ChatServer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.s
+.PHONY : src/ChatServer/ChatServer.cpp.s
+
+src/MongoDBManager/MongoDBManager.o: src/MongoDBManager/MongoDBManager.cpp.o
+.PHONY : src/MongoDBManager/MongoDBManager.o
+
+# target to build an object file
+src/MongoDBManager/MongoDBManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o
+.PHONY : src/MongoDBManager/MongoDBManager.cpp.o
+
+src/MongoDBManager/MongoDBManager.i: src/MongoDBManager/MongoDBManager.cpp.i
+.PHONY : src/MongoDBManager/MongoDBManager.i
+
+# target to preprocess a source file
+src/MongoDBManager/MongoDBManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.i
+.PHONY : src/MongoDBManager/MongoDBManager.cpp.i
+
+src/MongoDBManager/MongoDBManager.s: src/MongoDBManager/MongoDBManager.cpp.s
+.PHONY : src/MongoDBManager/MongoDBManager.s
+
+# target to generate assembly for a file
+src/MongoDBManager/MongoDBManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/chat_server.dir/build.make CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.s
+.PHONY : src/MongoDBManager/MongoDBManager.cpp.s
+
 src/SessionManager/SessionManager.o: src/SessionManager/SessionManager.cpp.o
 .PHONY : src/SessionManager/SessionManager.o
 
@@ -186,6 +234,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... chat_server"
+	@echo "... src/ChatServer/ChatServer.o"
+	@echo "... src/ChatServer/ChatServer.i"
+	@echo "... src/ChatServer/ChatServer.s"
+	@echo "... src/MongoDBManager/MongoDBManager.o"
+	@echo "... src/MongoDBManager/MongoDBManager.i"
+	@echo "... src/MongoDBManager/MongoDBManager.s"
 	@echo "... src/SessionManager/SessionManager.o"
 	@echo "... src/SessionManager/SessionManager.i"
 	@echo "... src/SessionManager/SessionManager.s"

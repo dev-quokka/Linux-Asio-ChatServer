@@ -13,7 +13,9 @@ find_package(bsoncxx  CONFIG REQUIRED)
 
 add_executable(chat_server
     src/main.cpp
+    src/ChatServer/ChatServer.cpp
     src/SessionManager/SessionManager.cpp
+    src/MongoDBManager/MongoDBManager.cpp
 )
 
 target_link_libraries(chat_server

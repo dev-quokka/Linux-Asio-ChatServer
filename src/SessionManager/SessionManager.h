@@ -5,6 +5,8 @@
 #include <set>
 #include <string>
 
+#include "../MongoDBManager/MongoDBManager.h"
+
 class Session;
 
 namespace asio = boost::asio;

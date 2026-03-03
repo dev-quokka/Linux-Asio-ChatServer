@@ -5,12 +5,30 @@ mongocxx::instance& MongodbManager::GlobalInstance() {
     return inst;
 }
 
+void MongodbManager::SetIndex() {
+    if(!read_client_){
+        std::cerr << "MongoDB 클라이언트가 초기화되지 않았습니다. 인덱스를 설정 실패." << "\n";
+        return;
+    }
+
+    auto db = (*read_client_)[db_name_];
+    auto coll = db[coll_name_];
+
+    coll.create_index(make_document(
+        kvp("roomKey", 1),
+        kvp("cur_ms", -1)
+    ));
+}
+
 void MongodbManager::Start() {
     if (running_.exchange(true)) return;
 
     GlobalInstance();
-    worker_ = std::thread([this]() { WorkerLoop(); });
+    
+    read_client_.emplace(mongocxx::uri{uri_});
+    SetIndex();
 
+    worker_ = std::thread([this]() { WorkerLoop(); });
     std::cout << "MongoDB started" << "\n";
 }
 
@@ -32,13 +50,13 @@ void MongodbManager::Enqueue(ChatLogItem item) {
 
 void MongodbManager::WorkerLoop() {
     try {
-        client_.emplace(mongocxx::uri{uri_});
-        auto db = (*client_)[db_name_];
+        write_client_.emplace(mongocxx::uri{uri_});
+        auto db = (*write_client_)[db_name_];
         auto coll = db[coll_name_];
 
         while (running_) {
             ChatLogItem item;
-
+            
             {
                 std::unique_lock<std::mutex> lk(mtx_);
                 cv_.wait(lk, [&] { return !running_ || !q_.empty(); });
@@ -63,4 +81,9 @@ void MongodbManager::WorkerLoop() {
     } catch (const std::exception& e) {
         std::cerr << "[MongoLogger] Worker error: " << e.what() << "\n";
     }
+}
+
+const std::vector<ChatLogItem>& GetFriendChatLogs(const std::string& myName, const std::string& friendName) {
+    // MongoDB에서 myName과 관련된 친구 채팅 로그를 가져와서 전달
+
 }

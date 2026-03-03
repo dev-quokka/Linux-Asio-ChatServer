@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 #include <atomic>
 #include <condition_variable>
@@ -14,14 +16,11 @@
 #include <bsoncxx/v_noabi/bsoncxx/builder/stream/document.hpp>
 #include <bsoncxx/v_noabi/bsoncxx/json.hpp>
 
+#include "../ChatInfo.h"
+#include "../FriendInfo.h"
+
 using bsoncxx::builder::basic::kvp;
 using bsoncxx::builder::basic::make_document;
-
-struct ChatLogItem {
-    int64_t     cur_ms;      // 서버 기준 현재 시간 (클라 기준 시간 X)
-    std::string sender;     // 전달자 (소켓 번호)
-    std::string message;    // 채팅 내용
-};
 
 class MongodbManager{
 public:
@@ -32,13 +31,16 @@ public:
 
     void Start();
     void Stop();
-
+    
+    void SetIndex();
     void Enqueue(ChatLogItem item);
+
+    // 친구와 채팅한 기록을 불러와 전달하는 함수
+    const std::vector<ChatLogItem>& GetFriendChatLogs(const std::string& myName, const std::string& friendName);
 
 private:
     void WorkerLoop();
 
-    
     std::string uri_;
     std::string db_name_;
     std::string coll_name_;
@@ -54,5 +56,7 @@ private:
 
     // mongocxx::client는 기본 생성자 없음, optional로 감싸서 필요할 때 생성
     // unique_ptr도 가능하지만, optional로 힙 할당 없이 관리
-    std::optional<mongocxx::client> client_;
+    std::optional<mongocxx::client> read_client_;
+    std::optional<mongocxx::client> write_client_;
 };
+

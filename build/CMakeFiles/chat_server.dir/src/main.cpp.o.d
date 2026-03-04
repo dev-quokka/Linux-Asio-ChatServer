@@ -1482,4 +1482,7 @@ CMakeFiles/chat_server.dir/src/main.cpp.o: \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/helpers.hpp \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context.hpp \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json.hpp \
- /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json-fwd.hpp
+ /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json-fwd.hpp \
+ /home/quokka/chat_server/src/ChatServer/../SessionManager/../MongoDBManager/../ChatInfo.h \
+ /home/quokka/chat_server/src/ChatServer/../SessionManager/../MongoDBManager/../FriendInfo.h \
+ /home/quokka/chat_server/src/ChatServer/../SessionManager/../Test_Friends.h

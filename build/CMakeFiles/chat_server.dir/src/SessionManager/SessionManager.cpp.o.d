@@ -1481,4 +1481,7 @@ CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o: \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context.hpp \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json.hpp \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json-fwd.hpp \
+ /home/quokka/chat_server/src/SessionManager/../MongoDBManager/../ChatInfo.h \
+ /home/quokka/chat_server/src/SessionManager/../MongoDBManager/../FriendInfo.h \
+ /home/quokka/chat_server/src/SessionManager/../Test_Friends.h \
  /home/quokka/chat_server/src/SessionManager/Session.h

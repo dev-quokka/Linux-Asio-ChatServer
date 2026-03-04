@@ -13,8 +13,14 @@
 #include <mongocxx/v_noabi/mongocxx/instance.hpp>
 #include <mongocxx/v_noabi/mongocxx/client.hpp>
 #include <mongocxx/v_noabi/mongocxx/uri.hpp>
+
 #include <bsoncxx/v_noabi/bsoncxx/builder/stream/document.hpp>
 #include <bsoncxx/v_noabi/bsoncxx/json.hpp>
+
+#include <bsoncxx/v_noabi/bsoncxx/types.hpp>
+#include <bsoncxx/v_noabi/bsoncxx/document/view.hpp>
+#include <bsoncxx/v_noabi/bsoncxx/document/element.hpp>
+#include <bsoncxx/v_noabi/bsoncxx/builder/stream/document.hpp>
 
 #include "../ChatInfo.h"
 #include "../FriendInfo.h"
@@ -36,8 +42,11 @@ public:
     void Enqueue(ChatLogItem item);
 
     // 친구와 채팅한 기록을 불러와 전달하는 함수
-    const std::vector<ChatLogItem>& GetFriendChatLogs(const std::string& myName, const std::string& friendName);
-
+    std::vector<ChatLogItem> GetFriendChatLogs(const std::string& myName, const std::string& friendName);
+    
+    bsoncxx::document::value MakeChatDoc(const ChatLogItem& item, const std::string& roomKey);
+    std::string MakeRoomKeyByChatItem(const ChatLogItem& item);
+    
 private:
     void WorkerLoop();
 

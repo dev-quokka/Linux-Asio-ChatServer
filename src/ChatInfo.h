@@ -16,20 +16,24 @@
 // MongoDB에 저장한다면 다른 채팅 기록보다 ttl을 짧게 두거나, Redis 같은 인메모리 DB를 사용하는 것을 고려해 보자.
 
 
+// 친구 채팅방 입장시, 불러올 채팅 로그 개수
+constexpr std::size_t DM_CHAT_COUNT = 10;
+constexpr size_t MAX_CHAT_LEN = 20; // 채팅 최대 길이
+
 enum class ChatType : uint8_t { World, DM, Guild, Party, Login, Friend };
 
 struct ChatLogItem{
-    ChatType type;       // 채팅 종류 (월드, DM, 길드, 파티)
-    std::string sender;     // 전달자 (소켓 번호)
-    std::string message;    // 채팅 내용
-    std::optional<std::string> target; // DM일 때 상대방 닉네임, 길드/파티일 때는 ID
-    int64_t cur_ms;      // 서버 기준 현재 시간 (클라 기준 시간 X)
+    ChatType type = ChatType::World;       // 채팅 종류 (월드, DM, 길드, 파티)
+    std::string sender = "";     // 전달자 (소켓 번호)
+    std::string message = "";    // 채팅 내용
+    std::string target = "main"; // DM일 때 상대방 닉네임, 길드/파티일 때는 ID (월드 채팅은 Default로 "main"으로 설정)
+    int64_t cur_ms = 0;      // 서버 기준 현재 시간 (클라 기준 시간 X)
 };
 
 struct ParsedLine {
     ChatType type = ChatType::World;
-    std::optional<std::string> target; // DM일 때 상대방 닉네임, 길드/파티일 때는 ID
-    std::string message;
+    std::string target = ""; // DM일 때 상대방 닉네임, 길드/파티일 때는 ID
+    std::string message = "";
 };
 
 // 문자열 앞쪽 공백 제거 함수
@@ -45,7 +49,7 @@ static std::string ltrim(std::string s) {
     return s;
 }
 
-static ParsedLine ParseLine(const std::string& line) {
+inline ParsedLine ParseLine(const std::string& line) {
     ParsedLine pl{};
     std::istringstream iss(line);
 
@@ -99,4 +103,24 @@ static ParsedLine ParseLine(const std::string& line) {
     }
 
     return pl;
+}
+
+inline std::string MakeWorldRoomKey(const std::string& worldId) {
+    return "world:" + std::string(worldId);
+}
+
+inline std::string MakeDmRoomKey(const std::string& a_, const std::string& b_){
+    std::string a(a_);
+    std::string b(b_);
+
+    if (a > b) std::swap(a, b);
+    return "dm:" + a + ":" + b;
+}
+
+inline std::string MakeGuildRoomKey(const std::string& guildId){
+    return "guild:" + std::string(guildId);
+}
+
+inline std::string MakePartyRoomKey(const std::string& partyId){
+    return "party:" + std::string(partyId);
 }

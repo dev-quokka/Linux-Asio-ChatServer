@@ -455,4 +455,7 @@ CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o: \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/helpers.hpp \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/builder/stream/single_context.hpp \
  /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json.hpp \
- /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json-fwd.hpp
+ /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi/bsoncxx/json-fwd.hpp \
+ /home/quokka/chat_server/src/MongoDBManager/../MongoDBManager/../ChatInfo.h \
+ /usr/include/c++/13/sstream /usr/include/c++/13/bits/sstream.tcc \
+ /home/quokka/chat_server/src/MongoDBManager/../MongoDBManager/../FriendInfo.h

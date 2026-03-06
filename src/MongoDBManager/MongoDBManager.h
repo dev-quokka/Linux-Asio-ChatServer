@@ -44,21 +44,35 @@ public:
     // 친구와 채팅한 기록을 불러와 전달하는 함수
     std::vector<ChatLogItem> GetFriendChatLogs(const std::string& myName, const std::string& friendName);
     
+     // 비동기 read 요청 함수 추가
+    void RequestFriendChatLogs(const std::string& myName, const std::string& friendName,
+        std::function<void(std::vector<ChatLogItem>)> onComplete
+    );
+
     bsoncxx::document::value MakeChatDoc(const ChatLogItem& item, const std::string& roomKey);
     std::string MakeRoomKeyByChatItem(const ChatLogItem& item);
     
 private:
-    void WorkerLoop();
-
+    void WriteWorkerLoop();
+    void ReadWorkerLoop(); 
+    
     std::string uri_;
     std::string db_name_;
     std::string coll_name_;
 
-    std::mutex mtx_;
-    std::condition_variable cv_;
-    std::deque<ChatLogItem> q_;
+    // write
+    std::mutex write_mtx;
+    std::condition_variable write_cv;
+    std::deque<ChatLogItem> write_d;
+    std::thread write_worker;
+
+    // read
+    std::mutex read_mtx;
+    std::condition_variable read_cv;
+    std::deque<ReadRequest> read_d;
+    std::thread read_worker;
+
     std::atomic<bool> running_{false};
-    std::thread worker_;
 
     // mongocxx는 instance가 1개만 존재해야 하므로, static 함수로 관리
     static mongocxx::instance& GlobalInstance();

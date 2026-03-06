@@ -26,7 +26,7 @@ struct ChatLogItem{
     ChatType type = ChatType::World;       // 채팅 종류 (월드, DM, 길드, 파티)
     std::string sender = "";     // 전달자 (소켓 번호)
     std::string message = "";    // 채팅 내용
-    std::string target = "main"; // DM일 때 상대방 닉네임, 길드/파티일 때는 ID (월드 채팅은 Default로 "main"으로 설정)
+    std::string target = ""; // DM일 때 상대방 닉네임, 길드/파티일 때는 ID
     int64_t cur_ms = 0;      // 서버 기준 현재 시간 (클라 기준 시간 X)
 };
 
@@ -35,6 +35,12 @@ struct ParsedLine {
     std::string target = ""; // DM일 때 상대방 닉네임, 길드/파티일 때는 ID
     std::string message = "";
 };
+
+struct ReadRequest {
+        std::string myName;
+        std::string friendName;
+        std::function<void(std::vector<ChatLogItem>)> onComplete;
+    };
 
 // 문자열 앞쪽 공백 제거 함수
 static std::string ltrim(std::string s) {

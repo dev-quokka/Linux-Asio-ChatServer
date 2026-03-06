@@ -70,34 +70,46 @@ private:
 
                     if(parsed.type == ChatType::Login) {
                         user_name_ = parsed.target;
-                        std::string newMsg = "[유저ID: " + user_name_ + "] 님이 로그인했습니다.\n";
-
                         room_.Login(self, user_name_);
                     }
                     else if (parsed.type == ChatType::Friend) {
-                        std::string friendName = parsed.target;
-                        std::string friendChatLogs;
-                        friendChatLogs.reserve(DM_CHAT_COUNT * (MAX_CHAT_LEN + 32) + 64); // 한번에 가져올 DM 로그 개수 * (채팅 최대 길이 + 여유 공간)
+                        const std::string friendName = parsed.target;
 
-                        friendChatLogs += "-----" + friendName + "님과의 채팅-----\n";
+                        // 콜백 시점에 세션이 이미 종료될 수 있으므로 weak_ptr로 캡처
+                        auto self_weak = weak_from_this();
 
-                        const auto friendLogs = mongo_.GetFriendChatLogs(user_name_, friendName);
-                        for (const auto& log : friendLogs) {
-                            friendChatLogs += "[" + log.sender + "] : " + log.message + "\n";
-                        }
+                        mongo_.RequestFriendChatLogs(user_name_, friendName,
+                            [self_weak](std::vector<ChatLogItem> friendLogs) {
+                                if (auto self = self_weak.lock()) {
+                                    asio::post(self->strand_,
+                                        [self, logs = std::move(friendLogs)]() {
+                                            std::string friendChatLogs;
+                                            friendChatLogs.reserve(DM_CHAT_COUNT * (MAX_CHAT_LEN + 32) + 64);
 
-                        friendChatLogs += "--------------------------------------------\n";
+                                            friendChatLogs += "[DM_HISTORY_BEGIN]\n";
 
-                        Deliver(std::make_shared<const std::string>(std::move(friendChatLogs)));
+                                            for (const auto& log : logs) {
+                                                friendChatLogs += "[" + log.sender + "] : " + log.message + "\n";
+                                            }
+
+                                            friendChatLogs += "[DM_HISTORY_END]\n";
+
+                                            self->Deliver(std::make_shared<const std::string>(std::move(friendChatLogs)));
+                                        }
+                                    );
+                                }
+                            }   
+                        );
                     }
                     else if (parsed.type == ChatType::World) {
-                        std::string newMsg = "[유저ID: " + user_name_ + "] : " + parsed.message + "\n";
+                        std::string newMsg = "[World][" + user_name_ + "] : " + parsed.message + "\n";
 
                         auto msg = std::make_shared<const std::string>(std::move(newMsg));
                         room_.broadcast(msg);
+                        parsed.target = "main";
                     }
                     else if (parsed.type == ChatType::DM) {
-                        std::string newMsg = "[" + user_name_ + "] : " + parsed.message + "\n";
+                        std::string newMsg = "[DM][" + user_name_ + "] : " + parsed.message + "\n";
                         auto msg = std::make_shared<const std::string>(std::move(newMsg));
                         Deliver(msg);
 

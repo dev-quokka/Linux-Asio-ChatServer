@@ -1,25 +1,25 @@
 [
 {
   "directory": "/home/quokka/chat_server/build",
-  "command": "/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DMONGOCXX_STATIC -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi -std=gnu++17 -o CMakeFiles/chat_server.dir/src/main.cpp.o -c /home/quokka/chat_server/src/main.cpp",
+  "command": "/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DMONGOCXX_STATIC -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi -g -std=gnu++17 -o CMakeFiles/chat_server.dir/src/main.cpp.o -c /home/quokka/chat_server/src/main.cpp",
   "file": "/home/quokka/chat_server/src/main.cpp",
   "output": "CMakeFiles/chat_server.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/quokka/chat_server/build",
-  "command": "/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DMONGOCXX_STATIC -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi -std=gnu++17 -o CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o -c /home/quokka/chat_server/src/ChatServer/ChatServer.cpp",
+  "command": "/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DMONGOCXX_STATIC -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi -g -std=gnu++17 -o CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o -c /home/quokka/chat_server/src/ChatServer/ChatServer.cpp",
   "file": "/home/quokka/chat_server/src/ChatServer/ChatServer.cpp",
   "output": "CMakeFiles/chat_server.dir/src/ChatServer/ChatServer.cpp.o"
 },
 {
   "directory": "/home/quokka/chat_server/build",
-  "command": "/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DMONGOCXX_STATIC -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi -std=gnu++17 -o CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o -c /home/quokka/chat_server/src/SessionManager/SessionManager.cpp",
+  "command": "/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DMONGOCXX_STATIC -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi -g -std=gnu++17 -o CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o -c /home/quokka/chat_server/src/SessionManager/SessionManager.cpp",
   "file": "/home/quokka/chat_server/src/SessionManager/SessionManager.cpp",
   "output": "CMakeFiles/chat_server.dir/src/SessionManager/SessionManager.cpp.o"
 },
 {
   "directory": "/home/quokka/chat_server/build",
-  "command": "/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DMONGOCXX_STATIC -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi -std=gnu++17 -o CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o -c /home/quokka/chat_server/src/MongoDBManager/MongoDBManager.cpp",
+  "command": "/usr/bin/c++ -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DMONGOCXX_STATIC -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi -g -std=gnu++17 -o CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o -c /home/quokka/chat_server/src/MongoDBManager/MongoDBManager.cpp",
   "file": "/home/quokka/chat_server/src/MongoDBManager/MongoDBManager.cpp",
   "output": "CMakeFiles/chat_server.dir/src/MongoDBManager/MongoDBManager.cpp.o"
 }

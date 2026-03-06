@@ -6,5 +6,5 @@ CXX_DEFINES = -DBOOST_SYSTEM_DYN_LINK -DBOOST_SYSTEM_NO_LIB -DBSONCXX_STATIC -DM
 
 CXX_INCLUDES = -isystem /home/quokka/vcpkg/installed/x64-linux/include/mongocxx/v_noabi -isystem /home/quokka/vcpkg/installed/x64-linux/include -isystem /home/quokka/vcpkg/installed/x64-linux/include/bsoncxx/v_noabi
 
-CXX_FLAGS = -std=gnu++17
+CXX_FLAGS = -g -std=gnu++17
 

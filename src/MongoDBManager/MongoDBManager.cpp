@@ -55,35 +55,53 @@ void MongodbManager::SetIndex() {
     ));
 }
 
+void MongodbManager::RequestFriendChatLogs(const std::string& myName,const std::string& friendName,
+    std::function<void(std::vector<ChatLogItem>)> onComplete)
+{
+    {
+        std::lock_guard<std::mutex> lk(read_mtx);
+        read_d.push_back(ReadRequest{myName, friendName, std::move(onComplete)});
+    }
+
+    read_cv.notify_one();
+}
+
 void MongodbManager::Start() {
     if (running_.exchange(true)) return;
 
     GlobalInstance();
-    
+
+    // read client는 read worker에서만 사용하지만,
+    // 인덱스 설정을 위해 여기서 먼저 생성해도 괜찮음
     read_client_.emplace(mongocxx::uri{uri_});
     SetIndex();
 
-    worker_ = std::thread([this]() { WorkerLoop(); });
+    write_worker = std::thread([this]() { WriteWorkerLoop(); });
+    read_worker = std::thread([this]() { ReadWorkerLoop(); });
+
     std::cout << "MongoDB started" << "\n";
 }
 
 void MongodbManager::Stop() {
     if (!running_.exchange(false)) return;
 
-    cv_.notify_all();
-    if (worker_.joinable()) worker_.join();
+    write_cv.notify_all();
+    read_cv.notify_all();
+
+    if (write_worker.joinable()) write_worker.join();
+    if (read_worker.joinable()) read_worker.join();
 }
 
 void MongodbManager::Enqueue(ChatLogItem item) {
     {
-        std::lock_guard<std::mutex> lk(mtx_);
-        q_.push_back(std::move(item));
+        std::lock_guard<std::mutex> lk(write_mtx);
+        write_d.push_back(std::move(item));
     }
 
-    cv_.notify_one();
+    write_cv.notify_one();
 }
 
-void MongodbManager::WorkerLoop() {
+void MongodbManager::WriteWorkerLoop() {
     try {
         write_client_.emplace(mongocxx::uri{uri_});
         auto db = (*write_client_)[db_name_];
@@ -93,36 +111,61 @@ void MongodbManager::WorkerLoop() {
             ChatLogItem item;
             
             {
-                std::unique_lock<std::mutex> lk(mtx_);
-                cv_.wait(lk, [&] { return !running_ || !q_.empty(); });
+                std::unique_lock<std::mutex> lk(write_mtx);
+                write_cv.wait(lk, [&] { return !running_ || !write_d.empty(); });
 
-                if (!running_ && q_.empty()) break;
+                if (!running_ && write_d.empty()) break;
 
-                item = std::move(q_.front());
-                q_.pop_front();
+                item = std::move(write_d.front());
+                write_d.pop_front();
             }
 
             std::string roomKey = MakeRoomKeyByChatItem(item);
             
             auto doc = MakeChatDoc(item, roomKey);  
             coll.insert_one(doc.view());
-
-            std::cout << "Inserted: " << bsoncxx::to_json(doc.view()) << "\n";
         }
     } catch (const std::exception& e) {
         std::cerr << "[MongoLogger] Worker error: " << e.what() << "\n";
     }
 }
 
-std::vector<ChatLogItem> MongodbManager::GetFriendChatLogs(const std::string& myName, const std::string& friendName) {
-
-    // 유저가 특정 친구와의 채팅방에 들어왔을때 이전 채팅 로그를 전달하기 위해 호출되는 함수
-    // MongoDB에서 myName과 관련된 친구 채팅 로그를 가져와서 전달
-    std::vector<ChatLogItem> fcl;
-    
+void MongodbManager::ReadWorkerLoop() {
     try {
         if (!read_client_) {
-            GlobalInstance();
+            read_client_.emplace(mongocxx::uri{uri_});
+        }
+
+        while (running_) {
+            ReadRequest req;
+
+            {
+                std::unique_lock<std::mutex> lk(read_mtx);
+                read_cv.wait(lk, [&] { return !running_ || !read_d.empty(); });
+
+                if (!running_ && read_d.empty()) break;
+
+                req = std::move(read_d.front());
+                read_d.pop_front();
+            }
+
+            auto logs = GetFriendChatLogs(req.myName, req.friendName);
+
+            if (req.onComplete) {
+                req.onComplete(std::move(logs));
+            }
+        }
+    }
+    catch (const std::exception& e) {
+        std::cerr << "[MongoDB] ReadWorker error: " << e.what() << "\n";
+    }
+}
+
+std::vector<ChatLogItem> MongodbManager::GetFriendChatLogs(const std::string& myName, const std::string& friendName) {
+    std::vector<ChatLogItem> fcl;
+
+    try {
+        if (!read_client_) {
             read_client_.emplace(mongocxx::uri{uri_});
         }
 
@@ -133,8 +176,8 @@ std::vector<ChatLogItem> MongodbManager::GetFriendChatLogs(const std::string& my
         auto filter = make_document(kvp("roomKey", roomKey));
 
         mongocxx::options::find opt;
-        opt.sort(make_document(kvp("cur_ms", -1)));              // 최신순
-        opt.limit(static_cast<std::int64_t>(DM_CHAT_COUNT));     // 최근 DM (DM_CHAT_COUNT) 설정 개수 까지 가져오기
+        opt.sort(make_document(kvp("cur_ms", -1)));
+        opt.limit(static_cast<std::int64_t>(DM_CHAT_COUNT));
 
         auto colls = coll.find(filter.view(), opt);
 
@@ -156,10 +199,9 @@ std::vector<ChatLogItem> MongodbManager::GetFriendChatLogs(const std::string& my
             fcl.push_back(std::move(item));
         }
 
-        // 최신순으로 가져왔으니 화면/전송용으로 reverse 정렬
         std::reverse(fcl.begin(), fcl.end());
-
-    } catch (const std::exception& e) {
+    }
+    catch (const std::exception& e) {
         std::cerr << "[MongoDB] GetFriendChatLogs error: " << e.what() << "\n";
     }
 

@@ -129,7 +129,14 @@ Boost.Asio 기반 비동기 네트워크 서버 구조로
   - Read / Write Queue 기반 MongoDB 작업 처리
   - MongoDB 작업을 worker thread에서 처리
 
+<br>
 
+- #### Architecture Detail
+
+<img width="841" height="501" alt="Architecture drawio" src="https://github.com/user-attachments/assets/7c88d760-67f1-45cc-ad7d-a495e3824a5d" />
+
+
+<br>  
 <br>  
 
 ## Flow Chart

@@ -161,26 +161,24 @@ Boost.Asio 기반 비동기 네트워크 서버 구조로
 
 <br>
 
-## Performance Test
+## Performance Improvements
 
-### Test Method
+코드 검토 또는 부하 테스트 중 발견한 개선점을 적용하고,   
+Python 기반 load test client로 기존과 동일한 조건의 부하 테스트를 통해      
+안정성과 응답 성능 변화를 측정해 개선 효과를 검증합니다.
 
-Python 기반 load test client를 제작하여 동시 접속 및 동시 요청 환경에서 서버의 안정성과 응답 성능을 테스트
+<br>
 
+### Optimization #1 — MongoDB Read 작업의 Worker Thread 분리
 
-### Test Target
-
-1000 clients / FR 20 requests 환경에서 서버의 안정성과 응답 성능 검증
-
+---
 
 ### Problem
 
 부하 테스트 중 서버 크래시가 발생 (50 clients / FR 20 requests)
 
-<br>
-
 gdb stack trace 분석 결과,  
-MongoDB read 작업이 `Session::Read()` 내부에서 동기적으로 수행되며  
+MongoDB read 작업이 Session::Read() 내부에서 동기적으로 수행되며  
 IO thread blocking과 MongoDB 접근 경합이 발생하는 것을 확인
 
 ---
@@ -191,20 +189,24 @@ IO thread blocking과 MongoDB 접근 경합이 발생하는 것을 확인
 
 기존에는 친구 채팅 로그 조회 요청이 들어오면 `Session::Read()` 내부에서 MongoDB read를 직접 수행했습니다.
 
+```
 Session::Read()  
 → MongoDB read  
 → IO thread blocking
+```
 
 #### After
 
 MongoDB read 작업을 별도의 queue + worker thread 구조로 분리하여 
 네트워크 IO 처리와 DB 작업을 분리했습니다.
 
+```
 Session::Read()  
 → Read Queue  
 → MongoDB Read Worker Thread  
 → Callback  
 → Session Strand
+```
 
 <br>
 
@@ -233,3 +235,81 @@ Max latency(ms)     : 300.15
 
 MongoDB read 경로를 별도의 worker thread로 분리한 이후  
 기존 1000명의 동시 접속과 20000건의 친구 채팅 로그 조회 요청을 안정적으로 처리할 수 있었습니다.
+
+<br>
+
+<br>
+
+### Optimization #2 — Broadcast의 불필요한 sessions_ 복사 제거
+
+---
+
+### Problem
+
+SessionManager::broadcast()가 매 호출마다 std::set<shared_ptr<Session>>     
+컨테이너 전체를 복사한 후 순회하는 구조였습니다.
+
+```cpp
+std::set<std::shared_ptr<Session>> sessions_;
+
+void SessionManager::broadcast(...) {
+    asio::post(strand_, [this, msg]() {
+        auto tempSession = sessions_; // O(N log N) 복사 비용
+        for (auto& s : tempSession) {
+            s->Deliver(msg);
+        }
+    });
+}
+```
+
+기존 의도는 순회 중 다른 세션의 join/leave로 인한 컨테이너 수정에 대비한 안전 장치였으나,   
+모든 sessions_ 수정 작업(join/leave/Login)이 이미 동일한 strand로 직렬화되어 있어    
+순회 중 동시 수정이 발생할 수 없는 구조였습니다.
+
+<br>
+
+복사 비용:
+
+- `std::set` 복사: O(N log N) 트리 노드 동적 할당
+- `shared_ptr` 카운터: N개 원자적 증가 연산
+- 동접 증가 시 broadcast 호출당 누적 비용 증가
+
+---
+
+### Solution
+
+strand 보호 하에 sessions_를 직접 순회하도록 변경했습니다.
+
+```cpp
+void SessionManager::broadcast(...) {
+    asio::post(strand_, [this, msg]() {
+        for (auto& s : sessions_) {         // 복사 없이 직접 순회
+            s->Deliver(msg);
+        }
+    });
+}
+```
+
+---
+
+### Load Test Result
+
+5000 clients / FR 20 requests / world chat enabled
+
+|          | Before    | After     |          |
+|----------------|-----------|-----------|----------|
+| Total elapsed  | 71.97s    | 68.17s    | -5.3%    |
+| Avg latency    | 183.05ms  | 160.05ms  | -12.6%   |
+| P95 latency    | 229.06ms  | 208.36ms  | -9.0%    |
+| Max latency    | 296.93ms  | 317.04ms  | +6.8%  |
+| Failures       | 0         | 0         | -        |
+
+<br>
+
+평균 응답 지연 12.6%, P95 응답 지연 9.0% 개선되었습니다.
+
+<br>
+
+- 10회 이상 반복 측정에서 일관된 개선 비율 확인
+- 동접 및 요청 수가 증가할수록 개선 폭이 확대되는 것을 확인  
+  → 복사 비용이 동접에 따라 누적되는 구조적 영향이 실제로 존재함을 검증

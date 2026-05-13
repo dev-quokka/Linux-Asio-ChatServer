@@ -44,7 +44,7 @@ public:
     // 친구와 채팅한 기록을 불러와 전달하는 함수
     std::vector<ChatLogItem> GetFriendChatLogs(const std::string& myName, const std::string& friendName);
     
-     // 비동기 read 요청 함수 추가
+     // 비동기 read 요청 함수
     void RequestFriendChatLogs(const std::string& myName, const std::string& friendName,
         std::function<void(std::vector<ChatLogItem>)> onComplete
     );

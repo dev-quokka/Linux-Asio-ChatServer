@@ -42,6 +42,15 @@ private:
             asio::bind_executor(strand_,
                 [this, self](boost::system::error_code ec, std::size_t) {
                     if (ec) {
+                        if (ec == asio::error::operation_aborted) { 
+                            // 서버측 취소 (의도된 취소)
+                        }
+                        else if (ec == asio::error::eof || ec == asio::error::connection_reset) { // 클라이언트가 정상적으로 연결을 끊었거나, 연결이 리셋된 경우 (예상 가능한 에러, 윈도우 + 리눅스)
+                            std::cout << "[Session] " << user_name_ << " disconnected: " << ec.message() << "\n";
+                        }
+                        else { // 예상 못한 에러, error 레벨 로그 (로그로 알림)
+                            std::cerr << "[Session] Unexpected error in " << user_name_ << ": " << ec.message() << "\n";
+                        }
                         room_.leave(self);
                         return;
                     }

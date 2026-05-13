@@ -14,8 +14,11 @@ int main(int argc, char* argv[]) {
 
         // CPU 코어 기반으로 적당한 수의 워커스레드 생성
         unsigned int n = std::thread::hardware_concurrency();
-        if (n == 0) n = 4;
         
+        // 테스트용 워커스레드 개수 고정값
+        // unsigned int n = 8;
+        
+        if (n == 0) n = 4;
         n = std::min(n, 4u);
 
         std::vector<std::thread> workers;
@@ -31,5 +34,6 @@ int main(int argc, char* argv[]) {
         std::cerr << "[Fatal] " << e.what() << "\n";
         return 1;
     }
+    
     return 0;
 }

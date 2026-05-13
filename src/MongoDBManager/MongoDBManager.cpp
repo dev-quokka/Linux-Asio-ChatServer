@@ -70,9 +70,7 @@ void MongodbManager::Start() {
     if (running_.exchange(true)) return;
 
     GlobalInstance();
-
-    // read client는 read worker에서만 사용하지만,
-    // 인덱스 설정을 위해 여기서 먼저 생성해도 괜찮음
+    
     read_client_.emplace(mongocxx::uri{uri_});
     SetIndex();
 

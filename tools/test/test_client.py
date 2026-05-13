@@ -7,7 +7,7 @@ HOST = "127.0.0.1"
 PORT = 9000
 
 # 동시 접속 클라이언트 수
-CLIENTS = 1000
+CLIENTS = 5000
 
 # 각 클라이언트가 FR 요청을 몇 번 보낼지
 FR_REQUESTS_PER_CLIENT = 20
